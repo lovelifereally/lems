@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+    <class name="lems.entity.Check" table="tb_lems">
+        <id name="lid" column="lid">
+            <generator class="native"/>
+        </id>
+        <property name="dxid" column="dxid" type="string" length="200"/>
+        <property name="e1" column="e1" type="string" length="200"/>
+        <property name="creator" column="creator" type="string" length="200"/>
+        <property name="e2" column="e2" type="string" length="200"/>
+        <property name="e3" column="e3" type="string" length="200"/>
+        <property name="e4" column="e4" type="string" length="200"/>
+        <property name="e5" column="e5" type="string" length="200"/>
+        <property name="e6" column="e6" type="string" length="200"/>
+        <property name="create_date" column="create_date" length="100"/>
+        <property name="e7" column="e7" type="string" length="200"/>
+        <property name="e8" column="e8" type="string" length="200"/>
+    </class>
+</hibernate-mapping>

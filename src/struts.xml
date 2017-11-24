@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="lems" namespace="/" extends="struts-default">
+		<action name="check_*" class="checkAction" method="{1}">
+		  <result name="indexSuc">/result/indexSuc.jsp</result>
+		  <result name="storSubSuc">/result/storSubSuc.txt</result>
+		  <result name="checkSuc">/result/checkSuc.jsp</result>
+		  <result name="storageSuc">/result/storageSuc.txt</result>
+		  <result name="takeSuc">/result/takeSuc.jsp</result>
+		  
+		  <result name="indexErr">/result/Err.txt</result>
+		  <result name="storSubErr">/result/Err.txt</result>
+		  <result name="checkErr">/result/Err.txt</result>
+		  <result name="storageErr">/result/Err.txt</result>
+		  <result name="takeErr">/result/Err.txt</result>
+		</action>
+	</package>
+</struts>

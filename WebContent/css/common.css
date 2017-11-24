@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+html,body,div,span,img,ul,li,a,input{
+	margin: 0;
+	padding: 0;
+	font: normal 1em 'microsoft yahei','微软雅黑','宋体','sans-self';
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+img{
+	border: none;
+}
+html,body{
+	background-color: #ccffff;
+}
+.top{
+	overflow: hidden;
+}
+.top-icon div,.quick-search,#icon_search,.footer a,.footer .footer-div,.check-search,#check_search_submit,#container .footer,#menu,#text_quick_search,#check_search_input,#container .back,#tiquma_icon,#nfc_icon,.clear-icon,#check .home,.storage-back,.take-back,.stor-radius1,.stor-box ul li input{
+	transition: 0.7s ease;
+	-webkit-transition: 0.7s ease;
+	-moz-transition: 0.7s ease;
+	-o-transition: 0.7s ease;
+}
+
+#container{
+	width: 960px;
+	height: 600px;
+	border: 2px solid #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -301px 0 0 -481px;
+	background-color: #99ccff;
+	border-radius: 10px;
+	box-shadow: 2px 4px 12px 4px #cccccc;
+}
+.top{							/* border: 1px solid red; */
+	height: 62px;				
+}
+#container .top-icon{			/* border: 1px solid red; */
+	width: 86px;
+	height: 38px;
+	margin-top: 12px;
+	margin-left: 862px;
+}
+.top-icon div{
+	_display: inline;
+	width: 36px;
+	height: 36px;
+	float: left;
+}
+#top_icon_menu{
+	background: url(../img/menu1.png) no-repeat no-repeat;
+}
+#top_icon_exit{
+	background: url(../img/exit1.png) no-repeat no-repeat;
+	margin-left: 10px;
+}
+#top_icon_menu:hover{
+	background: url(../img/menu2.png) no-repeat no-repeat;
+	box-shadow: 0px 0px 10px 2px #006699;
+	border-radius: 100px;
+	cursor: pointer;
+}
+#top_icon_exit:hover{
+	background: url(../img/exit2.png) no-repeat no-repeat;
+	box-shadow: 0px 0px 10px 2px #ff0000;
+	border-radius: 100px;
+	cursor: pointer;
+}
+.top-icon div:hover,.clear-icon:hover,.stor-radius1:hover{
+	transform: rotate(360deg);
+	-ms-transform: rotate(360deg);		/* IE 9 */
+	-webkit-transform: rotate(360deg);	/* Safari and Chrome */
+	-o-transform: rotate(360deg);		/* Opera */
+	-moz-transform: rotate(360deg);		/* Firefox */
+}
+
+#menu{
+	wdith: 99px;
+	font-size: 16px;
+	position: absolute;
+	border: 1px solid blue;
+	left: 822px;
+	top: 60px;
+	display: none;
+	border-radius: 6px;
+}
+
+#menu li a{
+	display: block;
+	line-height: 20px;
+	padding: 6px 6px;
+}
+#menu:hover{
+	border: 1px solid #ffffff;
+	border-radius: 0;
+	box-shadow: 0 0 10px 1px #0066cc; 
+}
+#menu li a:hover{
+	background-color: #0099cc;
+	color: #ffffff;
+}
+.wrap{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(100,100,100,0.6);
+	z-index: 100;
+	border-radius: 10px;
+}
+.exit-dialog{
+    display: none;
+    width: 440px;
+    height: 300px;
+    border-radius: 8px;
+    border: 2px solid #0099cc;
+    box-shadow: 0 4px 25px 2px #0066cc;
+    z-index:101;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -220px;
+}
+.exit-dialog span{
+    display: block;
+    position: absolute;
+}
+.exit-dialog .exit-dialog-text{
+    width: 440px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+.exit-dialog .exit-btn{
+    width: 140px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid #0099cc;
+    bottom: 25px;
+    cursor: pointer;
+}
+.exit-dialog .exit-btn:hover{
+    background: #0099cc;
+    color: #ffffff;
+}
+.exit-dialog #sure_btn{
+    left: 25px;
+}
+.exit-dialog #cancel_btn{
+    right: 25px;
+}
+.clear-icon{
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	border-radius: 100px;
+	background: url(../img/clear.png);
+}
+.warn-dialog{
+	position: relative;
+	width: 398px;
+	height: 46px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: red;
+	border: 1px solid red;
+	border-radius: 10px;
+    top: -46px;
+    left: 50%;
+    margin: 0 0 0 -200px;
+    box-shadow: 0px 0px 10px 2px #ff0000;	
+}

@@ -1,0 +1,13 @@
+主键                  lid         Integer
+快件单号          dxid        String
+快件名称          e1          String  
+寄件人姓名      creator     String  
+寄件人地址      e2          String  
+寄件人电话      e3          String  
+收件人姓名      e4          String  
+收件人地址      e5          String  
+收件人电话      e6          String  
+
+创建时间          create_date Date
+提取码              e7          String      
+所在柜              e8          String
